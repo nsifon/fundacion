@@ -112,22 +112,21 @@
 					<div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> Contáctenos
 					</div>
 					<div class="card-body">
-						<form>
+						<form action="https://formspree.io/f/manyjrwe" method="POST" >
 							<div class="form-group">
 								<label for="name">Nombre ó Razón Social *</label>
-								<input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Ingrese su nombre completo o razón social" required>
+								<input type="text" name="nombre_razonsocial" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Ingrese su nombre completo o razón social" required>
 							</div>
 							<div class="form-group">
 								<label for="email">Correo electrónico *</label>
-								<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su email para responderle" required>
+								<input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su email para responderle" required>
 								<small id="emailHelp" class="form-text text-muted">Protegemos tu privacidad no compartiendo tu email con nadie.</small>
 							</div>
 							<div class="form-group">
 								<label for="message">Mensaje</label>
-								<textarea class="form-control" id="message" rows="6" placeholder="Ingrese su solicitud o mensaje. Le responderemos a la brevedad." required></textarea>
+								<textarea name="mensaje" class="form-control" id="message" rows="6" placeholder="Ingrese su solicitud o mensaje. Le responderemos a la brevedad." required></textarea>
 							</div>
-							<div class="mx-auto">
-							<button type="submit" class="btn btn-primary text-right">Enviar!</button></div>
+							<div class="mx-auto"><button type="submit" class="btn btn-primary text-right">Enviar!</button></div>
 						</form>
 					</div>
 				</div>

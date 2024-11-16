@@ -1,3 +1,9 @@
+/* Master ROOT */
+
+:root {
+	--turquesa-oscuro: #0f4----c5c;
+}
+
 /* Html y Body */
 
 html {
@@ -200,7 +206,7 @@ header#logoRedes .flexItem {
 	}
 
 .redes-osc a {
-	color: #0f4c5c;
+	color: --turquesa-oscuro;
 	font-size: 1.3rem;
 	padding: 7px;
 	transition: all 0.5s ease;
@@ -260,7 +266,7 @@ header#menuPrincipal nav ul li a {
 
 header#menuPrincipal nav li::before {
 	font-family: FontAwesome;
-	color: #0f4c5c;
+	color: --turquesa-oscuro;
 	margin-right:10px;
 	}
 
@@ -419,7 +425,7 @@ footer {
     position: relative;
     bottom: 0;
     margin: 20px auto 0;
-    background: linear-gradient(359deg, #5f0f40, #0f4c5c);
+    background: linear-gradient(359deg, #5f0f40, --turquesa-oscuro);
     background-size: 400% 400%;
 	animation: FooterTransition 7s ease infinite;
   

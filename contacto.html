@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Página web para Organizaciones OSC</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<script src="https://kit.fontawesome.com/9e8d345d8a.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body id="contacto">
+
+	<!-- Botón DONAR -->
+	
+	<a href="#" class="donarfixed">
+		<i class="heart-beat fas fa-heart"></i>
+		<span>Donar</span>
+	</a>
+
+	<!-- Logo + Redes -->
+	
+	<header id="logoRedes">
+		
+			<div class="flexItem logo-osc" data-aos="fade-right" data-aos-duration="1500">
+				<a href="./index.html">
+					<img src="media/logo.png" />
+					<p>Fundación<span>OSC</span></p>
+				</a>
+			</div>
+
+			<div class="flexItem redes-osc" data-aos="fade-left" data-aos-duration="1500">
+				<ul>
+					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
+					<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+					<li><a href="#"><i class="far fa-paper-plane"></i></a></li>
+				</ul>
+			</div>
+	</header>
+
+	<!-- Menú Principal -->
+
+	<header id="menuPrincipal">
+	<nav data-aos="zoom-in" data-aos-duration="1500">
+		<ul>
+			<li class="inicio"><a href="index.html">Inicio</a></li>
+			<li class="somos"><a href="somos.html">¿Quiénes somos?</a></li>
+			<li class="hacemos"><a href="hacemos.html">¿Qué hacemos?</a></li>
+			<li class="galeria"><a href="#">Galería</a>
+				<ul>
+					<li class="fotos"><a href="fotos.html">Fotos</a></li>
+					<li class="videos"><a href="videos.html">Videos</a></li>
+				</ul>
+			</li>
+			<li class="contacto"><a href="contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+	</header>
+
+	<!-- Título de página -->
+
+	<h1>Contacto</h1>
+	
+	<!-- Imagen encabezado -->
+	
+	<section class="featured">
+		<img src="media/contacto-banner.png" data-aos="zoom-in" data-aos-duration="1000">
+	</section>
+
+	<!-- Contenido de la página -->
+
+	<section class="contenido">
+	
+	<form action="formulario.php" method="GET">
+		
+	<fieldset> <legend>Envíenos sus comentarios</legend>
+
+		<label for="nombre"># Nombre: </label>
+		<input name="nombre" type="text" />
+		<br />
+		<label for="apellido"># Apellido: </label>
+		<input name="apellido" type="text" />
+		<br />
+		<label for="email"># Correo electrónico:</label>
+		<input name="email" type="email" />
+		<br /> 
+		<label for="sexualidad"># Sexualidad: </label>
+		<br /> 
+		<input name="sexualidad" type="radio" value="hombre" /> Hombre
+		<br />
+		<input name="sexualidad" type="radio" value="mujer" /> Mujer
+		<br />
+		<label for="estadocivil"># Estado civil: </label>
+		<select>
+			<option value="soltero">Solter@</option>
+			<option value="casado">Casad@</option>
+		</select>
+		<br />
+		<label for="comentarios"># Comentarios:</label>
+		<br />
+		<textarea placeholder="Escriba aquí su comentario"></textarea>
+		<br />
+		<label for="suscriptor"># ¿Desea suscribirse al boletín?: </label>
+		<input name="suscriptor" type="checkbox" value="1" /> ¡Suscribirse!
+		<br />
+		<button type="reset" value="Enviar">- Limpiar datos -</button>
+		<br />
+		<button type="submit" value="Enviar">Enviar!</button>
+	</fieldset>
+	</form>
+	</section>
+
+	<!-- Pie de página -->	
+	
+	<footer>
+			<div class="flexItem redes-osc">
+				<ul>
+					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
+					<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+					<li><a href="#"><i class="far fa-paper-plane"></i></a></li>
+				</ul>
+			</div>
+	</footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script type="text/javascript">
+	window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("menuPrincipal").style.background = "rgba(255,255,255,0.9)";
+    } else {
+    document.getElementById("menuPrincipal").style.background = "transparent";
+    }
+}
+</script>
+</body>
+</html>

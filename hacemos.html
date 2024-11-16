@@ -1,111 +1,255 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Página web para Organizaciones OSC</title>
-	<link rel="stylesheet" type="text/css" href="estilos.css">
-	<script src="https://kit.fontawesome.com/9e8d345d8a.js" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<body id="hacemos">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hacemos</title>
+		<meta name="author" content="AMOR Fundación">
+		<link  rel="canonical" href="http://coderhouse.enar.com.ar/hacemos">
+		<meta name="description" content="Te contamos cómo logramos cumplir con nuestra misión y objetivos">
+		<meta name="keywords" content="fundacion, donacion, niños, ong, sin fines de lucro, recital a beneficio, donacion de dinero, donacion de instrumentos, talleres de arte, contencion psicologica">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<!-- BS CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/9e8d345d8a.js" crossorigin="anonymous"></script>
+		<!-- Animate on Scroll -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	</head>
+<body id="home">
 
 	<!-- Botón DONAR -->
-	
-	<a href="#" class="donarfixed">
-		<i class="heart-beat fas fa-heart"></i>
-		<span>Donar</span>
-	</a>
+	<header>
+		<a href="#">
+			<div class="donarFixed">
+				<button type="button" class="btn btn-primary">
+					<i class="heart-beat fas fa-heart"></i>
+					<span>Donar</span>
+				</button>
+			</div>
+		</a>
+	</header>
 
 	<!-- Logo + Redes -->
-	
-	<header id="logoRedes">
-		
-			<div class="flexItem logo-osc" data-aos="fade-right" data-aos-duration="1500">
-				<a href="./index.html">
+	<header id="logoRedesMenu">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+		  	<!-- Logo -->
+			<a class="navbar-brand" href="index">
+				<div class="logoPrincipal" data-aos="fade-right" data-aos-duration="1500">
 					<img src="media/logo.png" />
-					<p>Fundación<span>OSC</span></p>
-				</a>
-			</div>
-
-			<div class="flexItem redes-osc" data-aos="fade-left" data-aos-duration="1500">
-				<ul>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-					<li><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
-					<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-					<li><a href="#"><i class="far fa-paper-plane"></i></a></li>
+					<p>AMOR<span>Fundación</span></p>
+				</div>
+			</a>
+			<!-- Burguer Menú -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Menú Elements -->
+			<div data-aos="fade-left" data-aos-duration="1500" class="collapse navbar-collapse" id="navbarsExample07">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+					<a class="nav-link inicio" href="index">Inicio</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link somos" href="somos">Somos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hacemos" href="hacemos">Hacemos</a>
+					</li>
+					<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle galeria" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Galería
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item fotos" href="fotos">Fotos</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item videos" href="videos">Videos</a>
+					</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link contacto" href="contacto">Contacto</a>
+					</li>
+					<li class="nav-item redes-osc">
+						<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+					</li>
+					<li class="nav-item redes-osc">
+						<a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+					</li>
 				</ul>
 			</div>
-	</header>
-
-	<!-- Menú Principal -->
-
-	<header id="menuPrincipal">
-	<nav data-aos="zoom-in" data-aos-duration="1500">
-		<ul>
-			<li class="inicio"><a href="index.html">Inicio</a></li>
-			<li class="somos"><a href="somos.html">¿Quiénes somos?</a></li>
-			<li class="hacemos"><a href="hacemos.html">¿Qué hacemos?</a></li>
-			<li class="galeria"><a href="#">Galería</a>
-				<ul>
-					<li class="fotos"><a href="fotos.html">Fotos</a></li>
-					<li class="videos"><a href="videos.html">Videos</a></li>
-				</ul>
-			</li>
-			<li class="contacto"><a href="contacto.html">Contacto</a></li>
-		</ul>
+		</div>
 	</nav>
 	</header>
-	
-	<!-- Título de página -->
+	<!-- Breadcrumbs -->
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Inicio</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Hacemos</li>
+			</ol>
+		</nav>	
+	</div>
 
-	<h1>Hacemos</h1>
-	
-	<!-- Imagen encabezado -->
-	
-	<section class="featured">
-		<img src="media/hacemos-banner.jpg" data-aos="zoom-in" data-aos-duration="1000">
-	</section>
+	<!-- Jumbotron -->
 
-	<!-- Contenido de la página -->
-
-	<section class="contenido">
-	Contenido
-	</section>
-
-	<!-- Pie de página -->	
+	<div class="jumbotron">
+		<div class="container">
+		  <h1 data-aos="fade-left" data-aos-duration="500" class="display-3">Hacemos</h1>
+		  <p data-aos="fade-left" data-aos-duration="1000" >Te contamos cómo logramos cumplir con nuestra misión y objetivos</p>
+		  <p data-aos="fade-left" data-aos-duration="1500" ><a class="btn btn-primary btn-lg" href="#" role="button">Donar »</a></p>
+		</div>
+	</div>
 	
-	<footer>
-			<div class="flexItem redes-osc">
-				<ul>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-					<li><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
-					<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-					<li><a href="#"><i class="far fa-paper-plane"></i></a></li>
-				</ul>
+	<!-- Collapse Content -->
+
+	<div class="container">
+		<div class="accordion" id="accordionExample">
+			
+			<div class="card">
+			<div class="card-header" id="headingOne">
+				<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					Metodología
+				</button>
+				</h2>
 			</div>
-	</footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<script type="text/javascript">
-	window.onscroll = function() {scrollFunction()};
+		
+			<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+				<div class="card-body">
+					Lograr la confianza de los chicos y sus adultos referentes es la clave del proceso resiliente que se busca impulsar. La colaboración entre varios actores, inclusive los adultos más cercanos a los chicos -un 30% en contacto directo, a veces muy seguido, con nuestro equipo- sumada al trabajo en red con otras OSC e instituciones, hace a la contundencia del acompañamiento. Nuestro método incluye:
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("menuPrincipal").style.background = "rgba(255,255,255,0.9)";
-    } else {
-    document.getElementById("menuPrincipal").style.background = "transparent";
-    }
-}
-</script>
+				<ul>
+					<li>Iniciación en diversas disciplinas artísticas en el marco de talleres de día gratuitos inspirados en la filosofía pedagógica de la “Educación Por el Arte”.</li>
+					<li>Acompañamiento constante por psicológicos clínicos, psicólogos sociales y trabajadores sociales, basado en la “pedagogía de la presencia”, con especial atención a la inserción escolar y la salud.</li>
+					<li>Acceso gratuito a una variedad de espacios y eventos culturales (conciertos, cine, museos, etc.) e invitaciones a artistas a presentar su arte en la fundación de modo a ampliar el horizonte cultural y social de los participantes.</li>
+					<li>Muestras públicas del arte de los chicos para estimular su autoestima.</li>
+					<li>Permanente reflexión en equipo sobre la actividad, y seguimiento y evaluación del proceso realizado por los chicos.</li>
+					<li>Trabajo en red con ONG’s e instituciones.</li>
+				</ul>
+				</div>
+			</div>
+			</div>
+
+			<div class="card">
+			<div class="card-header" id="headingTwo">
+				<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					Acompañamiento psicosocial
+				</button>
+				</h2>
+			</div>
+			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				<div class="card-body">
+					Los participantes en nuestros talleres están generalmente confrontados a situaciones personales y comunitarias muy complejas, muchas veces violentas y dolorosas. De ahí que les cuesta sostener una actividad y compromisos. Por lo tanto, aseguramos un acompañamiento psicosocial que se inspira en la Pedagogía de la Presencia, que aplicamos junto con la Pedagogía de la Educación Por el Arte: ver enlace “Arte y Resiliencia”.
+					<br>Todos los días de taller, al menos dos integrantes del equipo psicosocial están presentes en el terreno para ayudar a los chicos (unos 85 por tarde) a sostener la actividad de taller, prevenir y resolver conflictos y también mantener contactos con los referentes adultos que se acercan. Además, el equipo psicosocial trabaja con las escuelas, en especial con relación a temas de abandono y reinserción escolar y a situaciones conflictivos como el mobbing. También trabaja con las instituciones pertinentes, en especial el CESAC 9, la Defensoría del Niño de Boca-Barracas, el Centro de Acceso a la Justicia y el CNNyA.
+					<br>A su pedido, algunas adolescentes reciben un tratamiento psicológico privado para ayudarles a superar situaciones traumáticas. Del lado suyo, los referentes adultos que lo desean pueden beneficiarse con un acompañamiento privado en relación a situaciones que les cuesta manejar con un chico.
+					<br>El equipo psicosocial también tiene la misión de sostener a los coordinadores de los talleres que pueden verse confrontados con situaciones difíciles de manejar.
+					<br>Buscamos conocer la dinámica del barrio y construir con los adultos que rodean a los chicos una relación de diálogo y confianza, sin juicio de valor sobre las personas y sus actividades.
+				</div>
+			</div>
+			</div>
+
+			<div class="card">
+			<div class="card-header" id="headingThree">
+				<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					Actividades
+				</button>
+				</h2>
+			</div>
+			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+				<div class="card-body">
+					<b>Actividades destinadas a los chicos:</b> En tanto espacio de día, se proponen actividades en horario post-escolar (16:30 a 19:30hs) para no interferir negativamente con la participación escolar de los chicos.
+					<br><b>Espacio Resilarte:</b> En el contexto de su Espacio ResilArte, se organizan encuentros con profesionales de entidades afines y de instituciones competentes, para intercambiar experiencias, reflexiones y buenas prácticas en torno a temáticas que son centrales en este tipo de trabajo: creatividad y resiliencia, violencia doméstica y malos tratos, abuso sexual, abandono y soledad de los chicos, modalidades de aprendizaje e impacto del arte sobre chicos en situación de riesgo psicosocial, entre otros.
+				</div>
+			</div>
+			</div>
+
+			<div class="card">
+			<div class="card-header" id="headingFour">
+				<h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+					Talleres de Arte
+				</button>
+				</h2>
+			</div>
+			<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+				<div class="card-body">
+					El taller es nuestra principal herramienta para promover el buscado proceso de resiliencia. En ellos, en base a la pedagogía de la “Educación Por el Arte” iniciamos a niñas, niños y adolescentes en situación de riesgo psicosocial, de 4 a 18 años, en diversas disciplinas artísticas, dándoles al mismo tiempo (dentro y fuera de los talleres) un acompañamiento psicológico y social fundado en la pedagogia de la presencia descrita por Antonio Carlos Gomes Da Costa.
+					<br>El acceso a los talleres es libre y gratuito. Por decisión propia, chicas y chicos de distintas edades acuden a los distintos talleres. Pueden explorar todas las opciones hasta sentir cual es la disciplina que más los interesa.
+					<br>El espacio JugArte está reservado a niñas y niños de 4 a 6-7 años mientras todos los demás talleres son accesibles a chicos de entre 7 y 18 años.
+					<br>En música, los chicos más motivados pueden acceder a una “beca de estudios musicales” bajo la forma de un curso semanal gratuito de guitarra (en dúo) o de teclado (individual) y al préstamo de un instrumento. A cambio, se comprometen a enseñar lo que saben a otra persona de su elección.
+				</div>
+			</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header" id="headingFive">
+					<h2 class="mb-0">
+					<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+						Resultados e Impacto
+					</button>
+					</h2>
+				</div>
+				<div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+					<div class="card-body">
+						En un proceso de resiliencia, sobre todo en personas en desarrollo, el tiempo es un factor importante. Además se pueden presentar avances y retrocesos:
+
+						<ul>
+							<li>En los últimos diez años evaluamos que el 58% de los chicos registrados participaron en nuestras actividades una o varias veces por semana y que el 60% lo hizo desde hace más de 2 años y 21% desde hace más de 5 años.</li>
+							<li>Registramos la evolución positiva, a veces radical, que realizan muchos chicos con un impacto sobre su auto-estima y su “contrato de vida”, su capacidad de vincularse con los demás, e incidencias positivas sobre su comportamiento en general así como sobre su nivel de inserción y desarrollo escolar y social.</li>
+							<li>El trabajo artístico de los chicos es muy productivo y da lugar a muestras y conciertos en espacios como el Museo B. Quinquela Martin y la Usina del Arte.</li>
+							<li>Algunos jóvenes ya ayudan en los talleres.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Pie de página -->	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-s-12 col-xs-12 contacto-p">
+					<p>Conectate para conocer más info y hacer tu donación</p>
+				</div>
+				<div class="col-s-12 col-xs-12 redes-footer">
+					<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+					<a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+					<a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+					<a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
+					<a class="nav-link" href="#"><i class="fas fa-mobile-alt"></i></a>
+					<a class="nav-link" href="#"><i class="fab fa-whatsapp"></i></a>
+					<a class="nav-link" href="#"><i class="far fa-paper-plane"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Animate On Scroll -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+	AOS.init();
+	</script>
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<!-- Menu WHITEN on Scroll -->
+	<script type="text/javascript">
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 10) {
+			document.getElementById("logoRedesMenu").style.background = "rgba(255,255,255,0.9)";
+			} else {
+			document.getElementById("logoRedesMenu").style.background = "transparent";
+			}
+	}
+	</script>
 </body>
 </html>

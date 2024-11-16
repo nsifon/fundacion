@@ -1,111 +1,236 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Página web para Organizaciones OSC</title>
-	<link rel="stylesheet" type="text/css" href="estilos.css">
-	<script src="https://kit.fontawesome.com/9e8d345d8a.js" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<body id="videos">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Videos</title>
+		<meta name="author" content="AMOR Fundación">
+		<link  rel="canonical" href="http://coderhouse.enar.com.ar/videos">
+		<meta name="description" content="Compartimos con vos videos de nuestro quehacer diario. Disfrutalos!">
+		<meta name="keywords" content="fundacion, donacion, niños, ong, sin fines de lucro, recital a beneficio, donacion de dinero, donacion de instrumentos, talleres de arte, contencion psicologica">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<!-- BS CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/9e8d345d8a.js" crossorigin="anonymous"></script>
+		<!-- Animate on Scroll -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+		
+	</head>
+<body id="home">
 
 	<!-- Botón DONAR -->
-	
-	<a href="#" class="donarfixed">
-		<i class="heart-beat fas fa-heart"></i>
-		<span>Donar</span>
-	</a>
+	<header>
+		<a href="#">
+			<div class="donarFixed">
+				<button type="button" class="btn btn-primary">
+					<i class="heart-beat fas fa-heart"></i>
+					<span>Donar</span>
+				</button>
+			</div>
+		</a>
+	</header>
 
 	<!-- Logo + Redes -->
-	
-	<header id="logoRedes">
-		
-			<div class="flexItem logo-osc" data-aos="fade-right" data-aos-duration="1500">
-				<a href="./index.html">
+	<header id="logoRedesMenu">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+		  	<!-- Logo -->
+			<a class="navbar-brand" href="index">
+				<div class="logoPrincipal" data-aos="fade-right" data-aos-duration="1500">
 					<img src="media/logo.png" />
-					<p>Fundación<span>OSC</span></p>
-				</a>
-			</div>
-
-			<div class="flexItem redes-osc" data-aos="fade-left" data-aos-duration="1500">
-				<ul>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-					<li><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
-					<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-					<li><a href="#"><i class="far fa-paper-plane"></i></a></li>
+					<p>AMOR<span>Fundación</span></p>
+				</div>
+			</a>
+			<!-- Burguer Menú -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Menú Elements -->
+			<div data-aos="fade-left" data-aos-duration="1500" class="collapse navbar-collapse" id="navbarsExample07">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+					<a class="nav-link inicio" href="index">Inicio</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link somos" href="somos">Somos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hacemos" href="hacemos">Hacemos</a>
+					</li>
+					<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle galeria" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Galería
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item fotos" href="fotos">Fotos</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item videos" href="videos">Videos</a>
+					</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link contacto" href="contacto">Contacto</a>
+					</li>
+					<li class="nav-item redes-osc">
+						<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+					</li>
+					<li class="nav-item redes-osc">
+						<a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+					</li>
 				</ul>
 			</div>
-	</header>
-
-	<!-- Menú Principal -->
-
-	<header id="menuPrincipal">
-	<nav data-aos="zoom-in" data-aos-duration="1500">
-		<ul>
-			<li class="inicio"><a href="index.html">Inicio</a></li>
-			<li class="somos"><a href="somos.html">¿Quiénes somos?</a></li>
-			<li class="hacemos"><a href="hacemos.html">¿Qué hacemos?</a></li>
-			<li class="galeria"><a href="#">Galería</a>
-				<ul>
-					<li class="fotos"><a href="fotos.html">Fotos</a></li>
-					<li class="videos"><a href="videos.html">Videos</a></li>
-				</ul>
-			</li>
-			<li class="contacto"><a href="contacto.html">Contacto</a></li>
-		</ul>
+		</div>
 	</nav>
 	</header>
+	<!-- Breadcrumbs -->
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+			  <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+			  <li class="breadcrumb-item"><a href="#">Galería</a></li>
+			  <li class="breadcrumb-item active" aria-current="page">Videos</li>
+			</ol>
+		</nav>	
+	</div>
 
-	<!-- Título de página -->
+	<!-- Jumbotron -->
 
-	<h1>Galería » Videos</h1>
+	<div class="jumbotron">
+		<div class="container">
+		  <h1 data-aos="fade-left" data-aos-duration="500" class="display-3">Videos</h1>
+		  <p data-aos="fade-left" data-aos-duration="1000" >Compartimos con vos videos de nuestro quehacer diario. Disfrutalos!</p>
+		  <p data-aos="fade-left" data-aos-duration="1500" ><a class="btn btn-primary btn-lg" href="#" role="button">Donar »</a></p>
+		</div>
+	</div>
 	
-	<!-- Imagen encabezado -->
+	<!-- Contentido Galería Fotos -->
+
 	
-	<section class="featured">
-		<img src="media/videos-banner.jpg" data-aos="zoom-in" data-aos-duration="1000">
-	</section>
+	<div class="container">
+		<div class="section">
+	  
+			<div class="producciones">
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="191" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/05/Instrucciones-para-mirar-por-la-ventana.jpg" alt="Instrucciones para mirar por la ventana" width="100%" height="auto" /></a>
+				</div>
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="221" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/05/Un-cuento-del-Taller-de-Historias-Extraordinas.jpg" alt="Un cuento del Taller de Historias Extraordinas" width="100%" height="auto" /></a>
+				</div>
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="258" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/05/El-gato.jpg" alt="El gato" width="100%" height="auto" /></a>
+				</div>
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="454" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/05/Cadaver-exquisito.jpg" alt="Cadáver exquisito" width="100%" height="auto" /></a>
+				</div>
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="455" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/05/La-planta-de-Bartolo.jpg" alt="La planta de Bartolo" width="100%" height="auto" /></a>
+				</div>
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="513" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/05/Como-inventar-una-historia-con-sonidos.jpg" alt="¿Cómo inventar historias con sonidos?" width="100%" height="auto" /></a>
+				</div>
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="822" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/05/Brujas-con-poco-trabajo.jpg" alt="Brujas con poco trabajo" width="100%" height="auto" /></a>
+				</div>
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="934" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/05/Recetario-de-pocimas.jpg" alt="Recetario de pócimas" width="100%" height="auto" /></a>
+				</div>
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="1051" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/05/Un-cuento-Confundiendo-Historias.jpg" alt="Un cuento: Confundiendo historias" width="100%" height="auto" /></a>
+				</div>
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="1297" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/06/Confundiendo-a-Ricitos-Blanca-Jacinta.jpg" alt="Confundiendo a Ricitos Blanca Jacinta" width="100%" height="auto" /></a>
+				</div>
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="1462" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/06/Los-mas-famosos-inventores.jpg" alt="Los más famosos inventores de inventos ridículos" width="100%" height="auto" /></a>
+				</div>
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="1543" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/06/Escribiendo-invento-ridiculos.jpg" alt="Escribiendo inventos ridículos" width="100%" height="auto" /></a>
+				</div>
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="1630" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/06/Pinches-el-puecoespin.jpg" alt="Pinches el puercoespin" width="100%" height="auto" /></a>
+				</div>
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="1656" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/06/Leyendo-a-Mafalda.jpg" alt="Leyendo a Mafalda" width="100%" height="auto" /></a>
+				</div>
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="1693" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/07/Como-hacer-una-historieta.jpg" alt="¿Cómo hacer una historieta?" width="100%" height="auto" /></a>
+				</div>
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="1725" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/07/Cuento-de-amor-y-amistad.jpg" alt="Un cuento de amor y amistad: El cuento de la caca" width="100%" height="auto" /></a>
+				</div>
+				
+				<div class="produccion">
+				<span class="playbtn"></span>
+				<a class="1781" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/07/Haciendo-rimas.jpg" alt="Haciendo rimas" width="100%" height="auto" /></a>
+				</div>
+				
+				<div class="produccion">
+				<a class="476" href="#"><img src="https://explorar.casarafael.org.ar/wp-content/uploads/2020/05/Nelson-Mandela-P.jpg" alt="Te lo dice un hombre extraordinario" width="100%" height="auto" /></a>
+				</div>
+				
+				</div>
 
-	<!-- Contenido de la página -->
-
-	<section class="contenido">
-	Contenido
-	</section>
-
+		</div>
+	</div>
 	<!-- Pie de página -->	
-	
 	<footer>
-			<div class="flexItem redes-osc">
-				<ul>
-					<li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fab fa-youtube"></i></a></li>
-					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-					<li><a href="#"><i class="fas fa-mobile-alt"></i></a></li>
-					<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-					<li><a href="#"><i class="far fa-paper-plane"></i></a></li>
-				</ul>
+		<div class="container">
+			<div class="row">
+				<div class="col-s-12 col-xs-12 contacto-p">
+					<p>Conectate para conocer más info y hacer tu donación</p>
+				</div>
+				<div class="col-s-12 col-xs-12 redes-footer">
+					<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+					<a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+					<a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+					<a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
+					<a class="nav-link" href="#"><i class="fas fa-mobile-alt"></i></a>
+					<a class="nav-link" href="#"><i class="fab fa-whatsapp"></i></a>
+					<a class="nav-link" href="#"><i class="far fa-paper-plane"></i></a>
+				</div>
 			</div>
+		</div>
 	</footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<script type="text/javascript">
-	window.onscroll = function() {scrollFunction()};
+	
+	<!-- Animate On Scroll -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+	AOS.init();
+	</script>
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("menuPrincipal").style.background = "rgba(255,255,255,0.9)";
-    } else {
-    document.getElementById("menuPrincipal").style.background = "transparent";
-    }
-}
-</script>
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<!-- Menu WHITEN on Scroll -->
+	<script type="text/javascript">
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 10) {
+			document.getElementById("logoRedesMenu").style.background = "rgba(255,255,255,0.9)";
+			} else {
+			document.getElementById("logoRedesMenu").style.background = "transparent";
+			}
+	}
+	</script>
 </body>
 </html>
